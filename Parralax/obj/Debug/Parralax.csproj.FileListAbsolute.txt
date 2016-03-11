@@ -1,0 +1,6 @@
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Parralax\Parralax\bin\Parralax.dll.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Parralax\Parralax\bin\Parralax.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Parralax\Parralax\bin\Parralax.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Parralax\Parralax\obj\Debug\Parralax.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Parralax\Parralax\obj\Debug\Parralax.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Parralax\Parralax\obj\Debug\Parralax.pdb

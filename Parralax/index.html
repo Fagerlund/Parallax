@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Forza</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="JavaScript.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+    <div id="pageone">
+        <div id="header">
+            <ul id="menu">
+                <li id="kom">Kommunikation</li>
+                <li id="utb">Utbildning</li>
+                <li id="ene">Energi & miljö</li>
+                <li id="säk">Säkerhet</li>
+                <li id="om">Om oss</li>
+            </ul>
+        </div>
+        <div id="menubutton">
+            <p>≡</p>
+        </div>
+        <div id="headertwo">
+            <div id="menubuttontwo">
+                <p>≡</p>
+            </div>
+            <ul id="menutwo">
+                <li id="komtwo">Kommunikation</li>
+                <li id="utbtwo">Utbildning</li>
+                <li id="enetwo">Energi & miljö</li>
+                <li id="säktwo">Säkerhet</li>
+                <li id="omtwo">Om oss</li>
+            </ul>
+        </div>
+        <div id="name">
+            <h1><span id="th">Þ</span>ÓRSVÍK</h1><br />
+            <p>the living city</p>
+        </div>
+    </div>
+    <h1 id="backtext">Þ</h1>
+    <div id="side"></div>
+
+
+
+    <div id="textone">
+        <h2>Kommunikation</h2>
+        <p>
+            Vår stad innehaver cykelparkeringar utanför lägenheter. Dessutom har vi sociala samlingsplatser för att uppmuntra cyklar som transport. Vi tycker att det är viktigt
+            att man enkelt kan transportera sig runt om i staden. Därför har vi många olika alternativ för att ta sig från en plats till en annan. Ett sätt är att ta en av våra
+            självstyrda elbussar som styrs med hjälp av GPS, ett annat sätt är att spårvagn som går runt i staden.
+            För folk som föredrar att ha sin egen bil tillåter vi endast fordon som går på icke-fossila bränslen. Många kommer troligtvis att ha en elbil finns möjligheten att få bilen
+            automatiskt uppladdad under tiden den färdas, det gör den genom att laddning från vägarna. Detta effektiviserar transporten något enormt samtidigt som staden
+            förblir miljövänlig med ren elektricitet.
+            Genom tåg till Þórshöfn kan man vidare transportera sig med flyg till andra städer och länder. Det är det enklaste och snabbaste sättet att ta sig till våran stad
+            då den ligger i område långt ifrån mycket annat.
+        </p>
+    </div>
+    <div id="imgmaps"></div>
+    <div id="imgone"></div>
+    <script>
+        var myCenter = new google.maps.LatLng(66.222307, -15.681370);
+        var marker;
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("maps"), mapProp);
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE
+            });
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+
+    <div id="texttwo">
+        <h2>Utbildning</h2>
+        <p>
+            Utbildningen i Þorsvik sker i den lokala skolbyggnaden. I denna skolbyggnad så går förskole, grundskole, gymnasie och universitets elever.
+            Dock så är eleverna indelade i olika sektioner av skolan baserat på vilken nivå dem ligger på. Vi har alla elever i samma byggnad eftersom vi
+            tror på att en samhörighet mellan ungdomen leder till en betydligt trevligare tillvaro i staden. Själva utbildningen lägger stor vikt på att lära
+            ungdomen om Islands historia och det isländska språket. Vi tycker nämligen att det är väsentligt att bevara vår fina kultur.
+            Skolan är lokaliserad nära våra idrottsanläggningar, eftersom vi tycker att det är självklart att studenterna i Þorsvik ska får möjligheten till att
+            utöva de idrotter som dem gillar, men att göra det på ett tidseffektivt vis. Utövandet av sporter förbättrar även elevernas hälsa.
+            hus, som alla invånare i Þorsvik har möjligheten att få vård av, då sjukhusvistelser är inkluderat i skatten.
+        </p>
+    </div>
+    <div id="imgtwo"></div>
+    <div id="imagetwo"></div>
+
+
+    <div id="textthree">
+        <h2>Energi & miljö</h2>
+        <p>
+            85% av Islands totala energikonsumtion år 2011 skapades av geotermisk energi. Med det menas att man använder sig utav den varma bergsgrunden för att skapa
+            energi. Processen går ut på så sett att man har borrat hål i marken där man sedan häller ner vatten på ett speciellt sett, vattnet avdunstar och blir till
+            vattenånga. Det paserar turbiner som är kopplade till generatorer som sedan skapar energi.<br />
+            En annan stor energikälla som har goda förutsättningar på Island är vind och vattenkraft. Då det blåser starka vindar på Island krävs stora och starka vindkraftverk.
+            Ett exempel på ett sådant stort vindkraftverk är Vestas v164. Dess vingspann på då 164 meter långt och med en total höjd på 220 meter högt, det motsvarar cirka 2
+            fotbollsplaner.<br />
+            Utöver det kan man även hitta stora luftrenare en bit utanför staden. Dessa luftrenare renar luften från koldioxid för att skapa en så miljövänlig och hälsosam
+            luft som möjligt. Det fungerar på så sett att de suger upp koldioxiden och släpper ut syret. Vi är då en av städerna på Island som är med och bidrar inom den stora
+            klimatförändringen.
+        </p>
+    </div>
+    <div id="imgthree"></div>
+    <div id="imagethree"></div>
+
+
+    <div id="textfour">
+        <h2>Säkerhet</h2>
+        <p>
+            När naturkatastrofer, bränder eller andra olyckor sker har Þórsvík toppmoderna och effektiva säkerhets åtgärder. Husen i staden är utrustade med luftrenare
+            som har funkitonen att rena luften från vulkaniska röker och gaser. Dessutom är husen utrustade med brandvarnare för att varna mot bränder och dessutom
+            automatiska brandsläckare. På så sett minksar även arbetet för att släcka husbränder.<br /><br />
+            När ett tekniskt problem uppstår kan man som medborgare i Þórsvík få automatiserade robotar att laga och ta hand om problemet. Exempel på det kan var läckande
+            rör i avloppen. Likadant kan det se ut vid andra arbeten. Att vi använder oss utav robotar istället för människor, dels på grund av ekonomi och dessutom
+            av effektivitet.
+        </p>
+    </div>
+    <div id="imgfour"></div>
+    <div id="imagefour"></div>
+
+    <div id="textfive">
+        <h2>Om oss</h2>
+        <p>
+            Vi fyra har tillsammans planerat och arbetat under dessa tretton veckorna och slutligen skapat staden Þórsvík. Simon Lindenfors och Tom Larsson har hjälp
+            till med att skapa byggnader i CAD. Dessa byggnader har sedan 3D-printats och har sedan har användts i modellen.<br /><br />
+            Lovisa Persson, som är vår grupps designer, har stått som ansvarig för det flesta designfrågorna, naturdelar i modellen och dessutom designen på Power Pointen
+            som vi använde på presentationen av staden.<br /><br />
+            Slutligen är det jag, Henrik Fagerlund. Som webbutvecklare och elev i webbutvecklingskursen fick jag som uppdrag att skapa en webbsida.
+            Webbsidan, som ni kan se, skulle innehålla information om funktioner och lösningar som finns i staden Þórsvík.
+        </p>
+    </div>
+    <div id="oss">
+        <div id="henrik">
+            <img src="Male.jpeg" />
+            <p>Henrik Fagerlund</p>
+        </div>
+        <div id="simon">
+            <img src="Male.jpeg" />
+            <p>Simon Lindenfors</p>
+        </div>
+        <div id="lovisa">
+            <img src="Shemale.jpg" />
+            <p>Lovisa Persson</p>
+        </div>
+        <div id="tom">
+            <img src="Male.jpeg" />
+            <p>Tom Larsson</p>
+        </div>
+    </div>
+</body>
+</html>
